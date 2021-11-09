@@ -1,0 +1,175 @@
+{
+  "data" : {
+    "url" : "cars.json"
+  },
+  "mark" : "sphere",
+  "encoding" : {
+    "z" : {
+      "field" : "Acceleration",
+      "type" : "quantitative",
+      "scale" : {
+        "type" : "linear",
+        "domain" : [
+          "0",
+          "24.8"
+        ],
+        "padding" : "0.05",
+        "range" : [
+          "0",
+          "500"
+        ],
+        "paddingInner" : "0.05",
+        "paddingOuter" : "0.05"
+      },
+      "axis" : {
+        "filter" : false,
+        "face" : "left",
+        "orient" : "bottom",
+        "title" : "Acceleration",
+        "length" : 500,
+        "color" : "#bebebe",
+        "grid" : false,
+        "ticks" : true,
+        "values" : [
+          "0",
+          "5",
+          "9.9",
+          "14.9",
+          "19.8",
+          "24.8"
+        ],
+        "tickCount" : 6,
+        "labels" : true
+      }
+    },
+    "x" : {
+      "field" : "Horsepower",
+      "type" : "quantitative",
+      "scale" : {
+        "domain" : [
+          0,
+          250
+        ],
+        "type" : "linear",
+        "padding" : "0.05",
+        "range" : [
+          "0",
+          "500"
+        ],
+        "paddingInner" : "0.05",
+        "paddingOuter" : "0.05"
+      },
+      "axis" : {
+        "filter" : true,
+        "face" : "front",
+        "orient" : "bottom",
+        "title" : "Horsepower",
+        "length" : 500,
+        "color" : "#bebebe",
+        "grid" : false,
+        "ticks" : true,
+        "values" : [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250"
+        ],
+        "tickCount" : 6,
+        "labels" : true
+      }
+    },
+    "y" : {
+      "field" : "Miles_per_Gallon",
+      "type" : "quantitative",
+      "scale" : {
+        "domain" : [
+          0,
+          50
+        ],
+        "type" : "linear",
+        "padding" : "0.05",
+        "range" : [
+          "0",
+          "500"
+        ],
+        "paddingInner" : "0.05",
+        "paddingOuter" : "0.05"
+      },
+      "axis" : {
+        "filter" : false,
+        "face" : "front",
+        "orient" : "left",
+        "title" : "Miles_per_Gallon",
+        "length" : 500,
+        "color" : "#bebebe",
+        "grid" : false,
+        "ticks" : true,
+        "values" : [
+          "0",
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ],
+        "tickCount" : 6,
+        "labels" : true
+      }
+    },
+    "color" : {
+      "field" : "Origin",
+      "type" : "nominal",
+      "scale" : {
+        "type" : "ordinal",
+        "domain" : [
+          "Europe",
+          "Japan",
+          "USA"
+        ],
+        "padding" : "0.05",
+        "range" : "category",
+        "scheme" : "tableau10",
+        "paddingInner" : "0.05",
+        "paddingOuter" : "0.05"
+      },
+      "legend" : {
+        "type" : "symbol",
+        "filter" : false,
+        "gradientWidth" : 200,
+        "gradientHeight" : 50,
+        "face" : "front",
+        "orient" : "right",
+        "x" : 500,
+        "y" : 500,
+        "z" : 0,
+        "title" : "Legend: Origin"
+      }
+    }
+  },
+  "interaction" : [
+    {
+      "type" : "toggleFilter",
+      "field" : "Cylinders",
+      "domain" : [
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type" : "thresholdFilter",
+      "field" : "Displacement",
+      "domain" : [
+        "0",
+        "455"
+      ]
+    }
+  ],
+  "width" : 500,
+  "height" : 500,
+  "depth" : 500
+}

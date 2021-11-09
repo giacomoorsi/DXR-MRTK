@@ -1,0 +1,115 @@
+{
+  "data" : {
+    "url" : "cars.json"
+  },
+  "mark" : "sphere",
+  "encoding" : {
+    "x" : {
+      "field" : "Horsepower",
+      "type" : "quantitative",
+      "scale" : {
+        "type" : "linear",
+        "domain" : [
+          "0",
+          "230"
+        ],
+        "padding" : "0,05",
+        "range" : [
+          "0",
+          "500"
+        ],
+        "paddingInner" : "0,05",
+        "paddingOuter" : "0,05"
+      },
+      "axis" : {
+        "filter" : false,
+        "face" : "front",
+        "orient" : "bottom",
+        "title" : "Horsepower",
+        "length" : 500,
+        "color" : "#bebebe",
+        "grid" : false,
+        "ticks" : true,
+        "values" : [
+          "0",
+          "46",
+          "92",
+          "138",
+          "184",
+          "230"
+        ],
+        "tickCount" : 6,
+        "labels" : true
+      }
+    },
+    "y" : {
+      "field" : "Miles_per_Gallon",
+      "type" : "quantitative",
+      "scale" : {
+        "type" : "linear",
+        "domain" : [
+          "0",
+          "466"
+        ],
+        "padding" : "0,05",
+        "range" : [
+          "0",
+          "500"
+        ],
+        "paddingInner" : "0,05",
+        "paddingOuter" : "0,05"
+      },
+      "axis" : {
+        "filter" : false,
+        "face" : "front",
+        "orient" : "left",
+        "title" : "Miles_per_Gallon",
+        "length" : 500,
+        "color" : "#bebebe",
+        "grid" : false,
+        "ticks" : true,
+        "values" : [
+          "0",
+          "93,2",
+          "186,4",
+          "279,6",
+          "372,8",
+          "466"
+        ],
+        "tickCount" : 6,
+        "labels" : true
+      }
+    },
+    "color" : {
+      "field" : "Weight_in_lbs",
+      "type" : "quantitative",
+      "scale" : {
+        "type" : "sequential",
+        "domain" : [
+          "0",
+          "5140"
+        ],
+        "padding" : "0,05",
+        "range" : "ramp",
+        "scheme" : "ramp",
+        "paddingInner" : "0,05",
+        "paddingOuter" : "0,05"
+      },
+      "legend" : {
+        "type" : "gradient",
+        "filter" : false,
+        "gradientWidth" : 200,
+        "gradientHeight" : 50,
+        "face" : "front",
+        "orient" : "right",
+        "x" : 500,
+        "y" : 500,
+        "z" : 0,
+        "title" : "Legend: Weight_in_lbs"
+      }
+    }
+  },
+  "width" : 500,
+  "height" : 500,
+  "depth" : 500
+}
