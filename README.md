@@ -1,5 +1,5 @@
 # DXR with Mixed Reality Toolkit
-DXR is a library for visualizing data in virtual and augmented reality systems. It was built in 2018 by leveraging the tools provided by the Unity library made by Microsoft for developing applications for HoloLens 1 called HoloToolkit.
+DXR is a library for visualizing data in virtual and augmented reality systems. It was built in 2018 by using the tools provided by the Unity library made by Microsoft for developing applications for HoloLens 1 called [https://github.com/MSHoloLens/HoloToolkit-Unity](HoloToolkit).
 
 With the introduction of HoloLens 2, Microsoft decided to discontinue support for HoloToolkit, creating a new library of tools for the development of augmented reality applications called [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity). This new library takes some of the functionalities of HoloToolkit, but for some features it completely overturns the functioning logic.
 
